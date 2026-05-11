@@ -1,0 +1,9 @@
+run,case,scenario,bp,program_args,simTicks,simInsts,system.cpu.cpi,system.cpu.ipc,system.cpu.branchPred.condPredicted,system.cpu.branchPred.condIncorrect,condIncorrectRate,condAccuracy,analysis
+1,01_no_predictor,predictable,none,--iterations 50000 --working-set 4096 --seed 1 --scenario predictable --period 32 --history-len 96,,,,,,,,,
+2,02_local_predictor,predictable,local,--iterations 50000 --working-set 4096 --seed 1 --scenario predictable --period 32 --history-len 96,,,,,,,,,
+3,03_local_bad_for_tournament,tournament,local,--iterations 50000 --working-set 4096 --seed 1 --scenario tournament --period 8 --history-len 96,,,,,,,,,
+4,04_tournament_predictor,tournament,tournament,--iterations 50000 --working-set 4096 --seed 1 --scenario tournament --period 8 --history-len 96,,,,,,,,,
+5,05_local_bad_for_bimode,bimode,local,--iterations 50000 --working-set 4096 --seed 1 --scenario bimode --period 1 --history-len 96,,,,,,,,,
+6,06_bimode_predictor,bimode,bimode,--iterations 50000 --working-set 4096 --seed 1 --scenario bimode --period 1 --history-len 96,,,,,,,,,
+7,07_local_bad_for_tage,tage,local,--iterations 50000 --working-set 4096 --seed 1 --scenario tage --period 128 --history-len 96,,,,,,,,,
+8,08_tage_predictor,tage,tage,--iterations 50000 --working-set 4096 --seed 1 --scenario tage --period 128 --history-len 96,,,,,,,,,

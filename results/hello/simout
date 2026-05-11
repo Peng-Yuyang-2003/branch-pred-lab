@@ -1,0 +1,29 @@
+Global frequency set at 1000000000000 ticks per second
+warn: failed to generate dot output from configs/branch_pred_lab/results/hello/config.dot
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/sim/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Apr  3 2026 18:17:36
+gem5 started May 11 2026 19:53:03
+gem5 executing on pyy-VMware-Virtual-Platform, pid 15795
+command line: ./build/X86/gem5.opt -d configs/branch_pred_lab/results/hello configs/branch_pred_lab/o3_bp_config.py --binary configs/branch_pred_lab/hello_student --program-args '2025316189 PengYuyang'
+
+info: Standard input is not a terminal, disabling listeners.
+Starting simulation: cmd=configs/branch_pred_lab/hello_student 2025316189 PengYuyang
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)S
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+Hello gem5
+student_id=2025316189
+name=PengYuyang
+Exiting @ tick 1067600000 because exiting with last active thread context
